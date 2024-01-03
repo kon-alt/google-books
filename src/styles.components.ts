@@ -20,10 +20,19 @@ export const HeaderBox = styled('div')`
   display: flex;
   align-items: flex-start;
   padding: 0 16px;
+  
+  @media(max-width: 991px){
+    flex-direction: column-reverse;
+  }
 `;
 
 export const Toolbar = styled('div')`
   flex-grow: 1;
+
+  @media(max-width: 991px){
+    width: 100%;
+    margin-top: 16px;
+  }
 `;
 
 export const TitlePage = styled('h1')`
