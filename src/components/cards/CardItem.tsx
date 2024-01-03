@@ -1,9 +1,10 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Book} from '../../store/types';
 import {Author, Authors, Card, Category, Image, Title, Tooltip} from './styles.components';
 const defaultImage = require('../../assets/images/defaul.png');
+
 export const CardItem = ({card}:{card: Book}) => {
-    const [showTooltip, setShowTooltip] = useState<boolean>(false);
+
     return (
         <Card key={card.id}>
             <Image src={card.imageLinks?.thumbnail ?? defaultImage} alt={'thumbnail'}/>

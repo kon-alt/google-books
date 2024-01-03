@@ -19,6 +19,7 @@ export const HeaderBox = styled('div')`
   margin: 16px auto;
   display: flex;
   align-items: flex-start;
+  padding: 0 16px;
 `;
 
 export const Toolbar = styled('div')`
